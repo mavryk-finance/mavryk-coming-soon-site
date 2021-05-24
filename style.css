@@ -1,0 +1,129 @@
+html, body {
+    background: #88D1C3;
+    color: #4F457C;
+    font-family: 'Houschka Pro';
+    min-height: 100vh;
+    display: block;
+    overflow-x: none;
+}
+
+body {
+    padding-bottom: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.coming-soon {
+    padding: 0 32px;
+    margin-bottom: 32px;
+
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-weight: 800;
+    margin-bottom: 0px;
+    font-size: 64px;
+    /* margin-top: 48px; */
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.1;
+}
+
+p {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    text-align: center;
+}
+
+.get-in-touch {
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    font-size: 18px;
+}
+
+a {
+    color: #4F457C;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .coming-soon {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .coming-soon {
+        position: absolute;
+        justify-content: center;
+        top: -15%;
+        left: 10%;
+    }
+
+    .illustration {
+        display: flex;
+        align-items: flex-end;
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    img {
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    img {
+        width: 40%;
+        position: relative;
+        left: -10%;
+    }
+
+    .coming-soon {
+        left: 30%;
+        top: -15%;
+    }
+}
